@@ -1,5 +1,3 @@
-import { add as lodashAdd } from 'lodash-es';
-
 /**
  * 加算メソッド
  * @param x - 数値
@@ -7,5 +5,5 @@ import { add as lodashAdd } from 'lodash-es';
  * @returns - 足した値
  */
 export const add = (x: number, y: number) => {
-  return lodashAdd(x, y);
+  return x + y;
 };
