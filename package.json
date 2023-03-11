@@ -1,0 +1,18 @@
+{
+  "name": "@wintyo-ssh-packages/utils",
+  "version": "0.0.0",
+  "description": "utility package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "wintyo <wintyo1024@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
