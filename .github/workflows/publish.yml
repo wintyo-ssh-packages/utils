@@ -25,7 +25,8 @@ jobs:
       - name: Prepare Publish Contents
         run: |
           mkdir publish
-          cp -r dist publish/dist
+          cp -r dist publish
+          cp -r src publish
           cp package.json publish
 
       - name: Deploy
