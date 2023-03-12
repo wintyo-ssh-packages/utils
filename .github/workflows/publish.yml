@@ -46,11 +46,13 @@ jobs:
         env:
           TAG_NAME: ${{ github.ref_name }}
 
-      - name: Deploy
+      # 参考
+      # https://github.com/peaceiris/actions-gh-pages/tree/v3.9.2#%EF%B8%8F-create-git-tag
+      - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./publish
           publish_branch: dist
           tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
-          tag_message: 'Deployment ${{ github.ref_name }}'
+          tag_message: 'Publication ${{ github.ref_name }}'
